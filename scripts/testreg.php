@@ -1,6 +1,6 @@
 <?php
 
-require('localtestreg.php')
+require('config.php');
 
 
 if (isset($_POST['user_name']) && isset($_POST['date'])&& isset($_POST['user_sity'])&& isset($_POST['user_phone'])&& isset($_POST['user_email'])){
@@ -20,11 +20,11 @@ if (isset($_POST['user_name']) && isset($_POST['date'])&& isset($_POST['user_sit
 	$email = $_POST['user_email'];
     
     // Параметры для подключения
-    $db_host = "u0676590_portf"; 
-    $db_user = "u0676590_maksim"; // Логин БД
-    $db_password = "zcuRZPH3sH"; // Пароль БД
-    $db_base = 'mybase'; // Имя БД
-    $db_table = "mytable"; // Имя Таблицы БД
+    $db_host = $config_db_host; 
+    $db_user = $config_db_user; // Логин БД
+    $db_password = $config_db_password; // Пароль БД
+    $db_base = $config_db_base; // Имя БД
+    $db_table = $config_db_table; // Имя Таблицы БД
     
     // Подключение к базе данных
     $mysqli = new mysqli($db_host,$db_user,$db_password,$db_base);
