@@ -5,7 +5,7 @@
 </head>
 <body>
 HELLO WORLD
-<form action="" method="POST">
+<form action="scripts/localtestreg.php" method="POST">
 
 	<!-- ФИО  -->
 	<p>
@@ -35,7 +35,7 @@ HELLO WORLD
 	<button type="submit" >Отправить форму</button>
 </form>
 
-<?php
+<!-- ?php
 
 // FIO
 $name = $_POST['user_name'];
@@ -50,6 +50,6 @@ $sity = $_POST['user_sity'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
 
-?>
+?> -->
 </body>
 </html>
