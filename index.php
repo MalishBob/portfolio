@@ -53,7 +53,7 @@ $email = $_POST['user_email'];
 ?> -->
 
 <footer>
-	<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/scripts/scripts.js"></script>
 </footer>
 </body>
 </html>
