@@ -4,53 +4,44 @@
 	<title>Портфолио</title>
 </head>
 <body>
-HELLO WORLD
-<form action="scripts/localtestreg.php" method="POST">
+	HELLO WORLD
+	<form enctype="multipart/form-data" action="scripts/testreg.php" method="POST">
 
-	<!-- ФИО  -->
-	<p>
-		<label>Введите Ваше имя:</label><br>
-		<input type="text" id="" name="user_name" placeholder="Иванов Иван Иванович">
-	</p>
-	<!-- Возраст -->
-	<p>
-		<label>Укажите дату рождения:</label><br>
-		<input type="date" name="date"/><br> 
-	</p>
+		<!-- Загрузка файла -->
+		<p>Загрузите ваши фотографии на сервер</p>
+		<p><input type="file" name="user_photo" multiple accept="image/*,image/jpeg,image/png"></p>
 
-	<!-- Город -->
-	<p>
-		<label>Укажите город:</label><br>
-		<input type="text" name="user_sity" placeholder="Samara">
-	</p>
+		<!-- ФИО  -->
+		<p>
+			<label>Введите Ваше имя:</label><br>
+			<input type="text" id="" name="user_name" placeholder="Иванов Иван Иванович">
+		</p>
+		<!-- Возраст -->
+		<p>
+			<label>Укажите дату рождения:</label><br>
+			<input type="date" name="user_age"/><br> 
+		</p>
 
-	<!-- Контакты -->
-	<p>
-		<label>Напишите свой номер:</label><br>
-		<input type="text" id="" name="user_phone" placeholder="+7 (999) 99 99 999"><br> 
-		<label>Напишите свой email:</label><br>
-		<input type="mail" id="" name="user_email" placeholder="example@mail.ru">
-	</p>
-<br>
-	<button type="submit" >Отправить форму</button>
-</form>
+		<!-- Город -->
+		<p>
+			<label>Укажите город:</label><br>
+			<input type="text" name="user_sity" placeholder="Samara">
+		</p>
 
-<!-- ?php
+		<!-- Контакты -->
+		<p>
+			<label>Напишите свой номер:</label><br>
+			<input type="text" id="" name="user_phone" placeholder="+7 (999) 99 99 999"><br> 
+			<label>Напишите свой email:</label><br>
+			<input type="mail" id="" name="user_email" placeholder="example@mail.ru">
+		</p>
 
-// FIO
-$name = $_POST['user_name'];
+		<label>Номер портфолио:</label><br>
+		<input type="text" id="" name="id_portfolio" placeholder="0"><br> 
+		<br>
+		<button type="submit" >Отправить форму</button>
 
-// age
-$date = $_POST['date'];
-
-// sity
-$sity = $_POST['user_sity'];
-
-// contact
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
-
-?> -->
+	</form>
 
 <footer>
 	<script src="/scripts/scripts.js"></script>
