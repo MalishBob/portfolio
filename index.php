@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Портфолио</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
 		<button type="submit" >Отправить форму</button>
 
 	</form>
-
+	<a href="showportfolio.php">Посмотреть готовые портфолио.</a>
 <footer>
 	<script src="/scripts/scripts.js"></script>
 </footer>
